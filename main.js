@@ -13,7 +13,7 @@ document.write("<h2>Task 1: </h2>")
 
 
 function isValidEmail(email) {
-  const pattern = /^[a-z0-9_.-]+@[a-z0-9.-]+\.[a-z]{2,6}$/gi
+  const pattern = /^[a-z0-9_.-]+@[a-z0-9.-]+\.[a-z]{2,6}$/i
   return pattern.test(email);
 }
 
@@ -36,7 +36,7 @@ console.log("Task 2: ");
 document.write(`<h2>Task 2: </h2>`)
 
 function isValidUrl(url) {
-  const pattern = /https?:\/\/www\.[a-z0-9-]+\.[a-z]{2,6}/gi;
+  const pattern = /https?:\/\/www\.[a-z0-9-]+\.[a-z]{2,6}/i;
   return pattern.test(url);
 }
 
